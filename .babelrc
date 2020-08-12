@@ -1,0 +1,12 @@
+{
+  "comments": false,
+  "presets": [
+    ["@babel/preset-env", { "useBuiltIns": "entry", "corejs": 3 }],
+    ["minify", {
+      "removeConsole": true
+    }]
+  ],
+  "plugins": [
+    ["@babel/plugin-proposal-class-properties", { "loose": true }]
+  ]
+}
