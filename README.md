@@ -69,6 +69,3 @@ The result of 'toCreate' variant is:
   }
 ]
 ```
-
-## Thanks
-- Inspiration from [ecrmnn/collect.js](https://github.com/ecrmnn/collect.js).

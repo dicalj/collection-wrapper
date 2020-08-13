@@ -1,8 +1,8 @@
 {
-  "name": "grillos",
-  "version": "0.0.1",
-  "main": "index.js",
-  "repository": "https://github.com/dicalj/grillos.git",
+  "name": "collection-wrapper",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "repository": "https://github.com/dicalj/collection-wrapper.git",
   "author": "dicalj <dicaljs@gmail.cl>",
   "license": "MIT",
   "devDependencies": {
