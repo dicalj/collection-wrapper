@@ -3,7 +3,10 @@
 <p>
    <a href="https://github.com/dicalj/collection-wrapper/blob/master/LICENSE">
       <img src="https://img.shields.io/github/license/dicalj/collection-wrapper?style=flat-square"/>
-    </a>     
+    </a>
+   <a href="https://www.npmjs.com/package/collection-wrapper">
+      <img src="https://img.shields.io/npm/v/collection-wrapper?style=flat-square"/>
+    </a>
 </p>
 
 A basic library to help you create collection(collect.js) variants, for example form fields or table columns.
