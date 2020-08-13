@@ -1,25 +1,38 @@
-# Fields headers wrapper
+# Collection Wrapper
 
-This is an helper lib with default class to manipulate collections of fields and headers definitions (use collect.js).
+<p>
+   <a href="https://github.com/dicalj/collection-wrapper/blob/master/LICENSE">
+      <img src="https://img.shields.io/github/license/dicalj/collection-wrapper?style=flat-square"/>
+    </a>     
+</p>
+
+A basic library to help you create collection variants, for example form fields or table columns.
+Establish behavior and manipulate collections in dedicated classes.
+Keeping your code clean and comprehensible.
 
 ## Install
 
 ```bash
-yarn add https://github.com/dicalj/fields-headers-wrapper.git
+yarn add collection-wrapper
 ```
 
 ## Usage
 
-Define the fields class
+Define a 'ExampleFields' class, and get the defined 'toCreate' variant:
 ```javascript
 // import required module
-import { Fields } from 'fields-headers-wrapper'
+import { Fields } from 'collection-wrapper'
 
-// example fields collection class
+/**
+ * ExampleFields
+ * 
+ * @class 
+ */
 export default class ExampleFields extends Fields {
 
   /**
    * Define the fields options.
+   * 
    * @returns {Array} fields options.
    */
   fields() {
@@ -43,6 +56,7 @@ export default class ExampleFields extends Fields {
 
   /**
    * Returns the specific collection to create variant.
+   * 
    * @return {Array} collect.js array extend instance.
    */
   static toCreate() {
@@ -51,31 +65,28 @@ export default class ExampleFields extends Fields {
 }
 ```
 
-Use the defined class
+Use the defined 'ExampleFields' class with the 'toCreate' variant:
 ```javascript
 // import required module
-import ExampleFields from './example.fields'
+import ExampleFields from './example.fields.js'
 
 // a new example fields create variant instance
-var exampleFields = ExampleFields.toCreate()
-
-// output example fields
-console.log(exampleFields)
-
-// output:
-//
-// [
-//  {
-//    name: 'name',
-//    type: 'text-field',
-//    prop: {
-//      label: 'Name'
-//    },
-//  }
-// ]
-//
+var fields = ExampleFields.toCreate()
 ```
 
-## License
+The result of 'toCreate' variant is:
 
-© dicaljs
+```javascript
+[
+  {
+    name: 'name',
+    type: 'text-field',
+    prop: {
+      label: 'Name'
+    },
+  }
+]
+```
+
+## Thanks
+- Inspiration from [ecrmnn/collect.js](https://github.com/ecrmnn/collect.js).
