@@ -1,7 +1,7 @@
 {
   "name": "collection-wrapper",
   "description": "A basic library to help you create collection variants",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "dist/index.js",
   "repository": "https://github.com/dicalj/collection-wrapper.git",
   "author": "dicalj <dicaljs@gmail.cl>",
