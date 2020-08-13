@@ -17,15 +17,15 @@ class Headers extends Collection {
    * @returns {Array} raw items.
    */
   items() {
-    return this.fields()
+    return this.headers()
   }
   
   /**
-   * Get the raw items of fields class instance.
+   * Get the raw items of headers class instance.
    * 
    * @returns {Array} raw items.
    */
-  fields() {
+  headers() {
     return []
   }  
 }
