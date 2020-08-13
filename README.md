@@ -6,7 +6,7 @@
     </a>     
 </p>
 
-A basic library to help you create collection variants, for example form fields or table columns.
+A basic library to help you create collection(collect.js) variants, for example form fields or table columns.
 Establish behavior and manipulate collections in dedicated classes.
 Keeping your code clean and comprehensible.
 
@@ -20,21 +20,10 @@ yarn add collection-wrapper
 
 Define a 'ExampleFields' class, and get the defined 'toCreate' variant:
 ```javascript
-// import required module
 import { Fields } from 'collection-wrapper'
 
-/**
- * ExampleFields
- * 
- * @class 
- */
 export default class ExampleFields extends Fields {
-
-  /**
-   * Define the fields options.
-   * 
-   * @returns {Array} fields options.
-   */
+  
   fields() {
     return [
       {
@@ -53,12 +42,7 @@ export default class ExampleFields extends Fields {
       },
     ]
   }
-
-  /**
-   * Returns the specific collection to create variant.
-   * 
-   * @return {Array} collect.js array extend instance.
-   */
+  
   static toCreate() {
     return this.reduce('name', ['name'])
   }
@@ -67,10 +51,8 @@ export default class ExampleFields extends Fields {
 
 Use the defined 'ExampleFields' class with the 'toCreate' variant:
 ```javascript
-// import required module
 import ExampleFields from './example.fields.js'
 
-// a new example fields create variant instance
 var fields = ExampleFields.toCreate()
 ```
 
